@@ -1,0 +1,28 @@
+# use glob syntax.
+syntax: glob
+*.elc
+*.eml
+*.swp
+*.orig
+*.pyc
+*~
+
+# switch to regexp syntax.
+syntax: regexp
+^\.pc/
+
+glob:src/static/*
+glob:src/static/Notices/*
+glob:src/static/images/tmp/*
+glob:*/Thumbs.db
+glob:.project
+glob:.pydevproject
+glob:.settings/org.eclipse.core.runtime.prefs
+glob:.settings/org.eclipse.core.resources.prefs
+
+glob:logs/access.log
+glob:logs/error.log
+glob:public_html/index.html
+glob:src/static/images/uploads/.thumbs/.db
+glob:src/static/js/tiny_mce/plugins/images/connector/php/.htaccess
+glob:src/urls.py.orig
